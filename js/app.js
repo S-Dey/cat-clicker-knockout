@@ -3,6 +3,12 @@ var ViewModel = function () {
     this.name = ko.observable('Tabby');
     this.imgSrc = ko.observable('img/434164568_fea0ad4013_z.jpg');
     this.imgAttribution = ko.observable('Udacity')
+    this.nicknames = ko.observableArray([
+        { name: 'Tabtab'},
+        { name: 'T-Bone'},
+        { name: 'Mr. T'},
+        { name: 'Tabitha Tab Tabby Catty Cat'}
+        ]);
 
     this.title = ko.computed(function() {
         var self = this;
